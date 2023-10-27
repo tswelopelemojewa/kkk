@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reports</title>
+    <script src="/static/js/code.js" defer></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+        integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    
+
+</head>
+
+<body x-data="construction">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">DELAY IN CONSTRUCTION</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="/">HOME</a>
+                    <a class="nav-link" href="/predictions">PREDICTIONS</a>
+                    <a class="nav-link" href="/about">ABOUT</a>
+                    <a class="nav-link" href="/contact">CONTACT US</a>
+                    <a class="nav-link" href="/report">REPORTS</a>
+                    <a class="nav-link" href="/Task">TASKS</a>
+                    <a class="nav-link" href="/logout" tabindex="-1" aria-disabled="true">LOGOUT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>HISTORICAL DATA</h1>
+
+        <br>
+        <table class="table text-center">
+            <thead>
+                <tr>
+                    <th>
+                        Delay
+                    </th>
+                    <th>
+                        laborers
+                    </th>
+                    <th>
+                        cash_flow
+                    </th>
+
+                    <th>
+                        Errors
+                    </th>
+
+                    <th>
+                        Communication
+                    </th>
+                    <th>
+                        Change_schedule
+                    </th>
+                    <th>
+                        bid_price
+                    </th>
+                    <th>
+                        scope_change
+                    </th>
+                    <th>
+                        Weather_conditions
+                    </th>
+                    <th>
+                        Accidents
+                    </th>
+
+
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <template x-for="x in AllHist">
+                    <tr>
+                        <td x-text="x.Delay"></td>
+                        <td x-text="x.laborers"></td>
+                        <td x-text="x.cash_flow"></td>
+                        <td x-text="x.Errors"></td>
+                        <td x-text="x.communication"></td>
+                        <td x-text="x.Change_schedule"></td>
+                        <td x-text="x.bid_price"></td>
+                        <td x-text="x.scope_change"></td>
+                        <td x-text="x.Weather_conditions"></td>
+                        <td x-text="x.Accidents"></td>
+                    </tr>
+                </template>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

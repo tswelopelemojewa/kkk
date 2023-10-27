@@ -1,0 +1,58 @@
+
+post http://127.0.0.1:5000/predict
+Content-Type: application/json
+
+{
+    
+    "laborers" : 1,
+    "cash_flow" : 2,
+    "Errors": 2,
+    "communication" : 4,
+    "Change_schedule" : 1,
+    "bid_price" : 3,
+    "scope_change" : 1,
+    "Weather_conditions" : 2,
+    "Accidents" : 1
+    
+}
+
+###
+
+post http://127.0.0.1:5000/upload
+Content-Type: application/json
+
+{
+    "Delay": 5, 
+    "laborers" : 2,
+    "cash_flow" : 3,
+    "Errors": 1,
+    "communication" : 3,
+    "Change_schedule" : 5,
+    "bid_price" : 3,
+    "scope_change" : 1,
+    "Weather_conditions" : 5,
+    "Accidents" : 4
+    
+}
+
+
+
+###
+GET http://127.0.0.1:5000/api/historical_data/
+
+
+###
+GET http://127.0.0.1:5000/api/tasks/
+
+
+###
+
+post http://127.0.0.1:5000/addtask
+Content-Type: application/json
+
+{
+    "Name": "Road contruction", 
+    "Duration" : 32,
+    "AssignedTo" : "Kopano",
+    "status": "In Progress"
+}
