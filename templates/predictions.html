@@ -15,6 +15,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+
 </head>
 
 <body x-data="construction">
@@ -33,7 +35,7 @@
                     <a class="nav-link" href="/predictions">PREDICTIONS</a>
                     <a class="nav-link" href="/about">ABOUT</a>
                     <a class="nav-link" href="/contact">CONTACT US</a>
-                    <a class="nav-link" href="/report">REPORTS</a>
+                    <a class="nav-link" href="/report">HISTORICAL DATA</a>
                     <a class="nav-link" href="/Task">TASKS</a>
                     <a class="nav-link" href="/logout" tabindex="-1" aria-disabled="true">LOGOUT</a>
                 </div>
@@ -49,7 +51,7 @@
             <hr>
             <div class="col-md-12">
                 <div class="">
-                    <div class="">
+                    <div class="form-control">
 
                         <h1 class="card-title">PREDICT SEVERITY</h1>
                         <!-- <a href="/logout" class="link-secondary d-flex flex-row-reverse">SIGN OUT</a> -->
@@ -171,6 +173,7 @@
 
                 <template x-for="x in hist">
                     <tr>
+
                         <td x-text="x.Delay"></td>
                         <td x-text="x.laborers"></td>
                         <td x-text="x.cash_flow"></td>
@@ -192,7 +195,7 @@
         <br><br>
         <!-- <div class="conatiner"> -->
 
-            <h3>RECOMMENDATIONS</h3>
+        <h3>RECOMMENDATIONS</h3>
         <p>
             <!-- <a class="btn btn-primary form-control" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
                 aria-expanded="false" aria-controls="multiCollapseExample1">Delay in delivering materials</a>
@@ -235,56 +238,72 @@
         </p>
         <div class="">
             <div class="col">
-                <a class="btn btn-primary form-control" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
-                aria-expanded="false" aria-controls="multiCollapseExample1">Delay in delivering materials</a>
+                <a class="btn btn-primary form-control" data-bs-toggle="collapse" href="#multiCollapseExample1"
+                    role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Delay in delivering
+                    materials</a>
 
                 <div class="collapse multi-collapse" id="multiCollapseExample1">
                     <div class="card card-body">
-                        <h3>Delay in delivering materials</h3>
+                        <h3 style="color:black">Delay in delivering materials</h3>
                         <table class="table">
                             <tbody>
                                 <tr>
-                                    • Establish clear communication protocols. Ensure that all stakeholders,
-                                    including suppliers, contractors, and project managers, have clear and
-                                    up-to-date information on material delivery schedules. This can be done through
-                                    regular meetings, email updates, or the use of a project management software.
+                                    <p style="color:black">
+                                        • Establish clear communication protocols. Ensure that all stakeholders,
+                                        including suppliers, contractors, and project managers, have clear and
+                                        up-to-date information on material delivery schedules. This can be done through
+                                        regular meetings, email updates, or the use of a project management software.
+                                    </p>
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Implement a risk management plan. Identify potential risks that could impact
-                                    material deliveries, such as weather events, labor shortages, or supplier
-                                    disruptions. Develop mitigation strategies for each risk to minimize the
-                                    likelihood and impact of delays.
-
+                                    <p style="color:black">
+                                        • Implement a risk management plan. Identify potential risks that could impact
+                                        material deliveries, such as weather events, labor shortages, or supplier
+                                        disruptions. Develop mitigation strategies for each risk to minimize the
+                                        likelihood and impact of delays.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Order materials in advance. Allow for ample lead time when ordering materials,
-                                    especially for long-lead items or materials that are subject to high demand.
-                                    This can help to reduce the risk of delays due to stockouts or production
+                                    <p style="color:black">
+                                        • Order materials in advance. Allow for ample lead time when ordering materials,
+                                        especially for long-lead items or materials that are subject to high demand.
+                                        This can help to reduce the risk of delays due to stockouts or production
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Use multiple suppliers. Avoid relying on a single supplier for all of your
-                                    material needs. By using multiple suppliers, you can reduce the risk of delays
-                                    if one supplier is unable to meet their
+                                    <p style="color:black">
+                                        • Use multiple suppliers. Avoid relying on a single supplier for all of your
+                                        material needs. By using multiple suppliers, you can reduce the risk of delays
+                                        if one supplier is unable to meet their</p>
                                 </tr><br>
                                 <tr>
-                                    • Track deliveries closely. Monitor material deliveries closely to identify any
-                                    potential problems early on. This can be done by using a tracking system or by
-                                    having someone responsible for tracking deliveries on a regular
+                                    <p style="color:black">
+                                        • Track deliveries closely. Monitor material deliveries closely to identify any
+                                        potential problems early on. This can be done by using a tracking system or by
+                                        having someone responsible for tracking deliveries on a regular
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Have contingency plans in place. Develop contingency plans for dealing with
-                                    material delays. This could include having alternative suppliers lined up, or
-                                    having stockpiles of critical materials on
+                                    <p style="color:black">
+                                        • Have contingency plans in place. Develop contingency plans for dealing with
+                                        material delays. This could include having alternative suppliers lined up, or
+                                        having stockpiles of critical materials on
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Be prepared to adjust the project schedule. If material delays are
-                                    unavoidable, be prepared to adjust the project schedule accordingly. This may
-                                    involve delaying certain tasks or activities until the necessary materials are
+                                    <p style="color:black">
+                                        • Be prepared to adjust the project schedule. If material delays are
+                                        unavoidable, be prepared to adjust the project schedule accordingly. This may
+                                        involve delaying certain tasks or activities until the necessary materials are
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Document everything. Keep detailed records of all communications and
-                                    interactions related to material deliveries. This can be helpful in resolving
-                                    any disputes that may
+                                    <p style="color:black">
+                                        • Document everything. Keep detailed records of all communications and
+                                        interactions related to material deliveries. This can be helpful in resolving
+                                        any disputes that may
+                                    </p>
                                 </tr><br>
                             </tbody>
                         </table>
@@ -293,70 +312,79 @@
             </div><br>
             <div class="col">
                 <button class="btn btn-primary form-control form-control" type="button" data-bs-toggle="collapse"
-                data-bs-target="#multiCollapseExample2" aria-expanded="false"
-                aria-controls="multiCollapseExample2">Shortage of laborers and equipment</button>
+                    data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                    aria-controls="multiCollapseExample2">Shortage of laborers and equipment</button>
 
                 <div class="collapse multi-collapse" id="multiCollapseExample2">
                     <div class="card card-body">
                         <table class="table">
 
-                            <h3>Shortage of laborers and equipment</h3>
+                            <h3 style="color:black">Shortage of laborers and equipment</h3>
                             <tbody>
                                 <tr>
-                                    • Cross-train existing employees. By training existing employees on multiple
-                                    tasks, you can increase their flexibility and make them more valuable assets to
-                                    your team. This can help to mitigate the impact of labor shortages.
-
+                                    <p style="color:black">
+                                        • Cross-train existing employees. By training existing employees on multiple
+                                        tasks, you can increase their flexibility and make them more valuable assets to
+                                        your team. This can help to mitigate the impact of labor shortages.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Invest in labor-saving equipment. By investing in equipment that can automate
-                                    or streamline manual tasks, you can reduce the need for manual labor. This can
-                                    help to offset the impact of labor shortages.
-
+                                    <p style="color:black">
+                                        • Invest in labor-saving equipment. By investing in equipment that can automate
+                                        or streamline manual tasks, you can reduce the need for manual labor. This can
+                                        help to offset the impact of labor shortages.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Partner with other companies. By partnering with other companies, you can
-                                    share resources and expertise. This can help you to access a wider pool of
-                                    laborers and equipment.
-
+                                    <p style="color:black">
+                                        • Partner with other companies. By partnering with other companies, you can
+                                        share resources and expertise. This can help you to access a wider pool of
+                                        laborers and equipment.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Recruit from underrepresented groups. By recruiting from underrepresented
-                                    groups, you can tap into a larger pool of potential workers. This can help to
-                                    address the issue of labor shortages.
-
+                                    <p style="color:black">
+                                        • Recruit from underrepresented groups. By recruiting from underrepresented
+                                        groups, you can tap into a larger pool of potential workers. This can help to
+                                        address the issue of labor shortages.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Offer competitive wages and benefits. By offering competitive wages and
-                                    benefits, you can make your company more attractive to potential employees. This
-                                    can help you to attract and retain qualified workers.
-
+                                    <p style="color:black">
+                                        • Offer competitive wages and benefits. By offering competitive wages and
+                                        benefits, you can make your company more attractive to potential employees. This
+                                        can help you to attract and retain qualified workers.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Promote your company. By promoting your company, you can increase awareness of
-                                    your company and its job opportunities. This can help you to attract potential
-                                    employees.
-
+                                    <p style="color:black">
+                                        • Promote your company. By promoting your company, you can increase awareness of
+                                        your company and its job opportunities. This can help you to attract potential
+                                        employees.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Be flexible with work arrangements. By being flexible with work arrangements,
-                                    you can make your company more attractive to a wider range of potential
-                                    employees. This could include offering flexible hours, telecommuting options, or
-                                    compressed workweeks.
-
+                                    <p style="color:black">
+                                        • Be flexible with work arrangements. By being flexible with work arrangements,
+                                        you can make your company more attractive to a wider range of potential
+                                        employees. This could include offering flexible hours, telecommuting options, or
+                                        compressed workweeks.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Invest in training and development. By investing in training and development,
-                                    you can help your employees to develop the skills they need to be successful.
-                                    This can help you to retain qualified workers and make your company more
-                                    attractive to potential employees.
-
+                                    <p style="color:black">
+                                        • Invest in training and development. By investing in training and development,
+                                        you can help your employees to develop the skills they need to be successful.
+                                        This can help you to retain qualified workers and make your company more
+                                        attractive to potential employees.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Stay up-to-date on industry trends. By staying up-to-date on industry trends,
-                                    you can be better prepared to address the challenges of labor and equipment
-                                    shortages.
-
+                                    <p style="color:black">
+                                        • Stay up-to-date on industry trends. By staying up-to-date on industry trends,
+                                        you can be better prepared to address the challenges of labor and equipment
+                                        shortages.
+                                    </p>
                                 </tr><br>
                             </tbody>
                         </table>
@@ -365,70 +393,80 @@
             </div><br>
             <div class="col">
                 <button class="btn btn-primary form-control" type="button" data-bs-toggle="collapse"
-                data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Cash
-                flow</button>
+                    data-bs-target="#multiCollapseExample3" aria-expanded="false"
+                    aria-controls="multiCollapseExample3">Cash
+                    flow</button>
 
                 <div class="collapse multi-collapse" id="multiCollapseExample3">
                     <div class="card card-body">
                         <table class="table">
 
-                            <h3>Cash Flow</h3>
+                            <h3 style="color:black">Cash Flow</h3>
                             <tbody>
                                 <tr>
-                                    • Improve invoicing and collections practices. Send invoices promptly and follow
-                                    up regularly on outstanding payments. Consider offering early payment discounts
-                                    to encourage prompt payment.
+                                    <p style="color:black">
+                                        • Improve invoicing and collections practices. Send invoices promptly and follow
+                                        up regularly on outstanding payments. Consider offering early payment discounts
+                                        to encourage prompt payment.
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Negotiate favorable payment terms with suppliers. If possible, negotiate
-                                    longer payment terms with suppliers to improve your cash flow.
+                                    <p style="color:black">
+                                        • Negotiate favorable payment terms with suppliers. If possible, negotiate
+                                        longer payment terms with suppliers to improve your cash flow.
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Use project management software to track expenses and income. This can help
-                                    you to identify areas where you can reduce costs or increase income.
-
+                                    <p style="color:black">
+                                        • Use project management software to track expenses and income. This can help
+                                        you to identify areas where you can reduce costs or increase income.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Maintain a line of credit or other form of financing. This can provide you
-                                    with access to cash if you experience a temporary shortfall.
+                                    <p style="color:black">
+                                        • Maintain a line of credit or other form of financing. This can provide you
+                                        with access to cash if you experience a temporary shortfall.
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Create a cash flow forecast. This will help you to predict future cash inflows
-                                    and outflows and identify potential problems before they occur.
+                                    <p style="color:black">
+                                        • Create a cash flow forecast. This will help you to predict future cash inflows
+                                        and outflows and identify potential problems before they occur.
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Factor invoices. This involves selling your invoices to a factoring company at
-                                    a discount. This can provide you with immediate cash, but it is important to be
-                                    aware of the fees associated with factoring.
+                                    <p style="color:black">
+                                        • Factor invoices. This involves selling your invoices to a factoring company at
+                                        a discount. This can provide you with immediate cash, but it is important to be
+                                        aware of the fees associated with factoring.
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Seek out government grants or loans. There may be government programs
-                                    available to help businesses with cash flow problems.
+                                    <p style="color:black">
+                                        • Seek out government grants or loans. There may be government programs
+                                        available to help businesses with cash flow problems.
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Reduce costs. Look for ways to reduce your business expenses. This could
-                                    include renegotiating contracts with suppliers, reducing inventory levels, or
-                                    eliminating unnecessary expenses.
+                                    <p style="color:black">
+                                        • Reduce costs. Look for ways to reduce your business expenses. This could
+                                        include renegotiating contracts with suppliers, reducing inventory levels, or
+                                        eliminating unnecessary expenses.
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Increase income. Look for ways to increase your business income. This could
-                                    include taking on new clients, offering new services, or increasing prices.
+                                    <p style="color:black">
+                                        • Increase income. Look for ways to increase your business income. This could
+                                        include taking on new clients, offering new services, or increasing prices.
 
-
+                                    </p>
                                 </tr><br>
                             </tbody>
                         </table>
@@ -437,8 +475,8 @@
             </div><br>
             <div class="col">
                 <button class="btn btn-primary form-control" type="button" data-bs-toggle="collapse"
-                data-bs-target="#multiCollapseExample4" aria-expanded="false"
-                aria-controls="multiCollapseExample4">Errors and ommission in design</button>
+                    data-bs-target="#multiCollapseExample4" aria-expanded="false"
+                    aria-controls="multiCollapseExample4">Errors and ommission in design</button>
 
 
                 <div class="collapse multi-collapse" id="multiCollapseExample4">
@@ -446,66 +484,75 @@
                         <table class="table">
 
 
-                            <h3>Errors and ommission in design</h3>
+                            <h3 style="color:black">Errors and ommission in design</h3>
                             <tbody>
                                 <tr>
-                                    • Implement a comprehensive design review process. This should involve multiple
-                                    stakeholders, including architects, engineers, and contractors, reviewing the
-                                    design at various stages. This can help to identify and correct errors before
-                                    they are incorporated into the construction documents.
-
+                                    <p style="color:black">
+                                        • Implement a comprehensive design review process. This should involve multiple
+                                        stakeholders, including architects, engineers, and contractors, reviewing the
+                                        design at various stages. This can help to identify and correct errors before
+                                        they are incorporated into the construction documents.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Use clear and concise language in design documents. This can help to reduce
-                                    the risk of misinterpretation and errors.
-
+                                    <p style="color:black">
+                                        • Use clear and concise language in design documents. This can help to reduce
+                                        the risk of misinterpretation and errors.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Coordinate design information carefully. This includes ensuring that all
-                                    design documents are consistent with each other and that all relevant
-                                    information is included.
-
+                                    <p style="color:black">
+                                        • Coordinate design information carefully. This includes ensuring that all
+                                        design documents are consistent with each other and that all relevant
+                                        information is included.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Use checklists and other tools to help identify potential errors. This can
-                                    help to ensure that all aspects of the design have been considered.
+                                    <p style="color:black">
+                                        • Use checklists and other tools to help identify potential errors. This can
+                                        help to ensure that all aspects of the design have been considered.
 
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Obtain feedback from users and other stakeholders. This can help to identify
-                                    potential problems with the design that may not have been considered by the
-                                    design team.
+                                    <p style="color:black">
+                                        • Obtain feedback from users and other stakeholders. This can help to identify
+                                        potential problems with the design that may not have been considered by the
+                                        design team.
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Document design decisions carefully. This can help to explain the rationale
-                                    behind design decisions and reduce the risk of errors.
+                                    <p style="color:black">
+                                        • Document design decisions carefully. This can help to explain the rationale
+                                        behind design decisions and reduce the risk of errors.
 
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Use a quality assurance/quality control (QA/QC) program. This can help to
-                                    identify and correct errors throughout the design and construction process.
+                                    <p style="color:black">
+                                        • Use a quality assurance/quality control (QA/QC) program. This can help to
+                                        identify and correct errors throughout the design and construction process.
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Provide training on error prevention. This can help to raise awareness of the
-                                    importance of error prevention and provide employees with the skills they need
-                                    to identify and correct errors.
+                                    <p style="color:black">
+                                        • Provide training on error prevention. This can help to raise awareness of the
+                                        importance of error prevention and provide employees with the skills they need
+                                        to identify and correct errors.
 
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Learn from mistakes. When errors are identified, it is important to take steps
-                                    to understand the root cause of the error and to implement measures to prevent
-                                    similar errors from occurring in the future.
-
+                                    <p style="color:black">
+                                        • Learn from mistakes. When errors are identified, it is important to take steps
+                                        to understand the root cause of the error and to implement measures to prevent
+                                        similar errors from occurring in the future.
+                                    </p>
                                 </tr><br>
                             </tbody>
                         </table>
@@ -516,66 +563,76 @@
             <div class="col">
 
                 <button class="btn btn-primary form-control" type="button" data-bs-toggle="collapse"
-                data-bs-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample5">Poor
-                communication between client, consultant and
-                contractor</button>
+                    data-bs-target="#multiCollapseExample5" aria-expanded="false"
+                    aria-controls="multiCollapseExample5">Poor
+                    communication between client, consultant and
+                    contractor</button>
 
                 <div class="collapse multi-collapse" id="multiCollapseExample5">
                     <div class="card card-body">
                         <table class="table">
 
 
-                            <h3>Poor communication between client, consultant and contractor</h3>
+                            <h3 style="color:black">Poor communication between client, consultant and contractor</h3>
                             <tbody>
                                 <tr>
-                                    • Establish clear communication protocols. This could include defining roles and
-                                    responsibilities, setting expectations for communication frequency and methods,
-                                    and creating a central repository for project information.
+                                    <p style="color:black">
+                                        • Establish clear communication protocols. This could include defining roles and
+                                        responsibilities, setting expectations for communication frequency and methods,
+                                        and creating a central repository for project information.
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Hold regular meetings. This provides a forum for all stakeholders to share
-                                    updates, discuss concerns, and make decisions.
+                                    <p style="color:black">
+                                        • Hold regular meetings. This provides a forum for all stakeholders to share
+                                        updates, discuss concerns, and make decisions.
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Encourage open and honest communication. This means being willing to share
-                                    information, even if it is negative, and being respectful of others' opinions.
+                                    <p style="color:black">
+                                        • Encourage open and honest communication. This means being willing to share
+                                        information, even if it is negative, and being respectful of others' opinions.
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Use clear and concise language. Avoid jargon and acronyms that may not be
-                                    understood by all stakeholders.
-
+                                    <p style="color:black">
+                                        • Use clear and concise language. Avoid jargon and acronyms that may not be
+                                        understood by all stakeholders.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Use technology to facilitate communication. This could include using project
-                                    management software, video conferencing, or instant messaging.
-
+                                    <p style="color:black">
+                                        • Use technology to facilitate communication. This could include using project
+                                        management software, video conferencing, or instant messaging.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Be mindful of cultural differences. Different cultures have different
-                                    communication styles, so it is important to be aware of these differences and to
-                                    adapt your communication style accordingly.
-
+                                    <p style="color:black">
+                                        • Be mindful of cultural differences. Different cultures have different
+                                        communication styles, so it is important to be aware of these differences and to
+                                        adapt your communication style accordingly.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Document all communications. This helps to create a record of what has been
-                                    said and agreed upon.
-
+                                    <p style="color:black">
+                                        • Document all communications. This helps to create a record of what has been
+                                        said and agreed upon.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Resolve conflicts promptly. If conflicts arise, it is important to address
-                                    them quickly and constructively.
-
+                                    <p style="color:black">
+                                        • Resolve conflicts promptly. If conflicts arise, it is important to address
+                                        them quickly and constructively.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Build trust and rapport. This takes time and effort, but it is essential for
-                                    effective communication.
-
+                                    <p style="color:black">
+                                        • Build trust and rapport. This takes time and effort, but it is essential for
+                                        effective communication.
+                                    </p>
                                 </tr><br>
                             </tbody>
                         </table>
@@ -585,59 +642,67 @@
 
             <div class="col">
                 <button class="btn btn-primary form-control" type="button" data-bs-toggle="collapse"
-                data-bs-target="#multiCollapseExample6" aria-expanded="false"
-                aria-controls="multiCollapseExample6">Change schedule</button>
+                    data-bs-target="#multiCollapseExample6" aria-expanded="false"
+                    aria-controls="multiCollapseExample6">Change schedule</button>
 
                 <div class="collapse multi-collapse" id="multiCollapseExample6">
                     <div class="card card-body">
                         <table class="table">
 
-                            <h3>Change schedule</h3>
+                            <h3 style="color:black">Change schedule</h3>
                             <tbody>
                                 <tr>
-                                    • Establish a clear and formal change management process. This should include
-                                    defining the types of changes that are allowed, the roles and responsibilities
-                                    of those involved in the change process, and the procedures for submitting,
-                                    reviewing, and approving changes.
-
+                                    <p style="color:black">
+                                        • Establish a clear and formal change management process. This should include
+                                        defining the types of changes that are allowed, the roles and responsibilities
+                                        of those involved in the change process, and the procedures for submitting,
+                                        reviewing, and approving changes.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Document all changes carefully. This includes recording the reason for the
-                                    change, the impact of the change on the project schedule, and the agreed-upon
-                                    mitigation measures.
-
+                                    <p style="color:black">
+                                        • Document all changes carefully. This includes recording the reason for the
+                                        change, the impact of the change on the project schedule, and the agreed-upon
+                                        mitigation measures.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Communicate changes promptly to all affected stakeholders. This helps to
-                                    ensure that everyone is aware of the changes and can make necessary adjustments.
-
+                                    <p style="color:black">
+                                        • Communicate changes promptly to all affected stakeholders. This helps to
+                                        ensure that everyone is aware of the changes and can make necessary adjustments.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Update the project schedule regularly to reflect approved changes. This helps
-                                    to ensure that the schedule is accurate and that everyone is aware of the latest
-                                    deadlines.
-
+                                    <p style="color:black">
+                                        • Update the project schedule regularly to reflect approved changes. This helps
+                                        to ensure that the schedule is accurate and that everyone is aware of the latest
+                                        deadlines.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Monitor the impact of changes on the project schedule. This helps to identify
-                                    potential problems early on and to take steps to mitigate their impact.
-
+                                    <p style="color:black">
+                                        • Monitor the impact of changes on the project schedule. This helps to identify
+                                        potential problems early on and to take steps to mitigate their impact.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Be flexible and adaptable. Change is inevitable in construction projects, so
-                                    it is important to be able to adapt to changes as they occur.
-
+                                    <p style="color:black">
+                                        • Be flexible and adaptable. Change is inevitable in construction projects, so
+                                        it is important to be able to adapt to changes as they occur.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Use technology to help manage changes. There are a number of software programs
-                                    available that can help to manage changes in construction projects.
-
+                                    <p style="color:black">
+                                        • Use technology to help manage changes. There are a number of software programs
+                                        available that can help to manage changes in construction projects.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Learn from experience. As you gain experience with managing changes, you will
-                                    be able to develop more effective strategies for dealing with them
+                                    <p style="color:black">
+                                        • Learn from experience. As you gain experience with managing changes, you will
+                                        be able to develop more effective strategies for dealing with them
 
-
+                                    </p>
                                 </tr><br>
 
                             </tbody>
@@ -647,58 +712,69 @@
             </div><br>
             <div class="col">
                 <button class="btn btn-primary form-control" type="button" data-bs-toggle="collapse"
-                data-bs-target="#multiCollapseExample7" aria-expanded="false"
-                aria-controls="multiCollapseExample7">Lowest bid price</button>
+                    data-bs-target="#multiCollapseExample7" aria-expanded="false"
+                    aria-controls="multiCollapseExample7">Lowest bid price</button>
 
                 <div class="collapse multi-collapse" id="multiCollapseExample7">
                     <div class="card card-body">
                         <table class="table">
 
 
-                            <h3>Lowest bid price</h3>
+                            <h3 style="color:black">Lowest bid price</h3>
                             <tbody>
                                 <tr>
-                                    • Conduct a thorough cost estimate. This should include all direct and indirect
-                                    costs associated with the project.
-
+                                    <p style="color:black">
+                                        • Conduct a thorough cost estimate. This should include all direct and indirect
+                                        costs associated with the project.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Analyze historical data on similar projects. This can help you to get a better
-                                    understanding of the costs associated with similar projects.
-
+                                    <p style="color:black">
+                                        • Analyze historical data on similar projects. This can help you to get a better
+                                        understanding of the costs associated with similar projects.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Consider the current market conditions. This includes factors such as the
-                                    availability of labor and materials, as well as the level of competition.
-
+                                    <p style="color:black">
+                                        • Consider the current market conditions. This includes factors such as the
+                                        availability of labor and materials, as well as the level of competition.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Build in a contingency fund. This is a reserve fund that can be used to cover
-                                    unexpected costs.
-
+                                    <p style="color:black">
+                                        • Build in a contingency fund. This is a reserve fund that can be used to cover
+                                        unexpected costs.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Factor in your profit margin. This is the amount of profit you want to make on
-                                    the project.
-
+                                    <p style="color:black">
+                                        • Factor in your profit margin. This is the amount of profit you want to make on
+                                        the project.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Be competitive. Your bid price should be competitive with other bids that are
-                                    likely to be submitted.
-
+                                    <p style="color:black">
+                                        • Be competitive. Your bid price should be competitive with other bids that are
+                                        likely to be submitted.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Be realistic. Your bid price should be based on your actual costs and not on
-                                    what you think the client is willing to pay.
-
+                                    <p style="color:black">
+                                        • Be realistic. Your bid price should be based on your actual costs and not on
+                                        what you think the client is willing to pay.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Be prepared to negotiate. The client may not be willing to accept your initial
-                                    bid price, so be prepared to negotiate.
+                                    <p style="color:black">
+                                        • Be prepared to negotiate. The client may not be willing to accept your initial
+                                        bid price, so be prepared to negotiate.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Don't be afraid to walk away. If the client is not willing to pay a fair
-                                    price, don't be afraid to walk away from the project.
+                                    <p style="color:black">
+                                        • Don't be afraid to walk away. If the client is not willing to pay a fair
+                                        price, don't be afraid to walk away from the project.
+                                    </p>
                                 </tr><br>
                             </tbody>
                         </table>
@@ -708,65 +784,74 @@
 
             <div class="col">
                 <button class="btn btn-primary form-control" type="button" data-bs-toggle="collapse"
-                data-bs-target="#multiCollapseExample8" aria-expanded="false"
-                aria-controls="multiCollapseExample8">Scope and specification changes</button>
+                    data-bs-target="#multiCollapseExample8" aria-expanded="false"
+                    aria-controls="multiCollapseExample8">Scope and specification changes</button>
 
                 <div class="collapse multi-collapse" id="multiCollapseExample8">
                     <div class="card card-body">
                         <table class="table">
 
-                            <h3>Scope and specification changes</h3>
+                            <h3 style="color:black">Scope and specification changes</h3>
                             <tbody>
                                 <tr>
-                                    • Establish a clear and formal change management process. This should include
-                                    defining the types of changes that are allowed, the roles and responsibilities
-                                    of those involved in the change process, and the procedures for submitting,
-                                    reviewing, and approving changes.
-
+                                    <p style="color:black">
+                                        • Establish a clear and formal change management process. This should include
+                                        defining the types of changes that are allowed, the roles and responsibilities
+                                        of those involved in the change process, and the procedures for submitting,
+                                        reviewing, and approving changes.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Document all changes carefully. This includes recording the reason for the
-                                    change, the impact of the change on the project, and the agreed-upon mitigation
-                                    measures.
+                                    <p style="color:black">
+                                        • Document all changes carefully. This includes recording the reason for the
+                                        change, the impact of the change on the project, and the agreed-upon mitigation
+                                        measures.
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Communicate changes promptly to all affected stakeholders. This helps to
-                                    ensure that everyone is aware of the changes and can make necessary adjustments.
-
+                                    <p style="color:black">
+                                        • Communicate changes promptly to all affected stakeholders. This helps to
+                                        ensure that everyone is aware of the changes and can make necessary adjustments.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Assess the impact of changes on the project schedule, budget, and
-                                    quality. This helps to identify potential problems early on and to take steps to
-                                    mitigate their impact.
-
+                                    <p style="color:black">
+                                        • Assess the impact of changes on the project schedule, budget, and
+                                        quality. This helps to identify potential problems early on and to take steps to
+                                        mitigate their impact.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Obtain approval from all affected stakeholders before implementing
-                                    changes. This helps to avoid disputes and to ensure that everyone is on board
-                                    with the changes.
-
+                                    <p style="color:black">
+                                        • Obtain approval from all affected stakeholders before implementing
+                                        changes. This helps to avoid disputes and to ensure that everyone is on board
+                                        with the changes.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Update the project documentation to reflect approved changes. This helps to
-                                    ensure that everyone is working from the same information.
-
+                                    <p style="color:black">
+                                        • Update the project documentation to reflect approved changes. This helps to
+                                        ensure that everyone is working from the same information.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Monitor the impact of changes on the project. This helps to identify any
-                                    unintended consequences of changes and to take steps to address them.
-
+                                    <p style="color:black">
+                                        • Monitor the impact of changes on the project. This helps to identify any
+                                        unintended consequences of changes and to take steps to address them.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Be flexible and adaptable. Change is inevitable in construction projects, so
-                                    it is important to be able to adapt to changes as they occur.
-
+                                    <p style="color:black">
+                                        • Be flexible and adaptable. Change is inevitable in construction projects, so
+                                        it is important to be able to adapt to changes as they occur.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Learn from experience. As you gain experience with managing changes, you will
-                                    be able to develop more effective strategies for dealing with them.
-
+                                    <p style="color:black">
+                                        • Learn from experience. As you gain experience with managing changes, you will
+                                        be able to develop more effective strategies for dealing with them.
+                                    </p>
                                 </tr><br>
                             </tbody>
                         </table>
@@ -776,55 +861,61 @@
 
             <div class="col">
                 <button class="btn btn-primary form-control" type="button" data-bs-toggle="collapse"
-                data-bs-target="#multiCollapseExample9" aria-expanded="false"
-                aria-controls="multiCollapseExample9">Weather conditions</button>
+                    data-bs-target="#multiCollapseExample9" aria-expanded="false"
+                    aria-controls="multiCollapseExample9">Weather conditions</button>
 
                 <div class="collapse multi-collapse" id="multiCollapseExample9">
                     <div class="card card-body">
                         <table class="table">
 
 
-                            <h3>Weather conditions</h3>
+                            <h3 style="color:black">Weather conditions</h3>
                             <tbody>
                                 <tr>
-                                    • Monitor weather forecasts closely. This will help you to be aware of potential
-                                    weather events that could impact your project.
+                                    <p style="color:black">
+                                        • Monitor weather forecasts closely. This will help you to be aware of potential
+                                        weather events that could impact your project.
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Schedule work for favorable weather conditions. Whenever possible, schedule
-                                    work for times when the weather is likely to be favorable. This can help to
-                                    avoid delays and disruptions.
+                                    <p style="color:black">
+                                        • Schedule work for favorable weather conditions. Whenever possible, schedule
+                                        work for times when the weather is likely to be favorable. This can help to
+                                        avoid delays and disruptions.
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Be prepared for adverse weather conditions. Even if the weather forecast is
-                                    favorable, it is always a good idea to be prepared for adverse weather
-                                    conditions. This could include having on-site shelters, tarps, and other
-                                    supplies that can be used to protect workers and materials from the elements.
-
+                                    <p style="color:black">
+                                        • Be prepared for adverse weather conditions. Even if the weather forecast is
+                                        favorable, it is always a good idea to be prepared for adverse weather
+                                        conditions. This could include having on-site shelters, tarps, and other
+                                        supplies that can be used to protect workers and materials from the elements.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Have a contingency plan in place. If adverse weather conditions do occur, it
-                                    is important to have a contingency plan in place. This could include having
-                                    alternative work activities that can be performed indoors or in sheltered areas.
+                                    <p style="color:black">
+                                        • Have a contingency plan in place. If adverse weather conditions do occur, it
+                                        is important to have a contingency plan in place. This could include having
+                                        alternative work activities that can be performed indoors or in sheltered areas.
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Communicate with workers and other stakeholders. It is important to
-                                    communicate with workers and other stakeholders about potential weather impacts.
-                                    This will help to ensure that everyone is aware of the risks and that they are
-                                    prepared to take necessary precautions.
-
+                                    <p style="color:black">
+                                        • Communicate with workers and other stakeholders. It is important to
+                                        communicate with workers and other stakeholders about potential weather impacts.
+                                        This will help to ensure that everyone is aware of the risks and that they are
+                                        prepared to take necessary precautions.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Document weather-related events. If weather-related events do impact your
-                                    project, it is important to document them. This could include taking photos or
-                                    videos of damage, as well as keeping records of delays and disruptions.
-
+                                    <p style="color:black">
+                                        • Document weather-related events. If weather-related events do impact your
+                                        project, it is important to document them. This could include taking photos or
+                                        videos of damage, as well as keeping records of delays and disruptions.
+                                    </p>
                                 </tr><br>
 
                             </tbody>
@@ -835,8 +926,8 @@
 
             <div class="col">
                 <button class="btn btn-primary form-control" type="button" data-bs-toggle="collapse"
-                data-bs-target="#multiCollapseExample10" aria-expanded="false"
-                aria-controls="multiCollapseExample10">Accidents during construction</button>
+                    data-bs-target="#multiCollapseExample10" aria-expanded="false"
+                    aria-controls="multiCollapseExample10">Accidents during construction</button>
 
                 <div class="collapse multi-collapse" id="multiCollapseExample10">
                     <div class="card card-body">
@@ -844,58 +935,67 @@
 
 
 
-                            <h3>Accidents during construction</h3>
+                            <h3 style="color:black">Accidents during construction</h3>
                             <tbody>
                                 <tr>
-                                    • Implement a comprehensive safety program. This should include safety training
-                                    for all workers, regular safety inspections, and a system for reporting and
-                                    investigating accidents.
-
+                                    <p style="color:black">
+                                        • Implement a comprehensive safety program. This should include safety training
+                                        for all workers, regular safety inspections, and a system for reporting and
+                                        investigating accidents.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Use personal protective equipment (PPE). PPE can help to prevent injuries from
-                                    falls, impacts, and other hazards.
-
+                                    <p style="color:black">
+                                        • Use personal protective equipment (PPE). PPE can help to prevent injuries from
+                                        falls, impacts, and other hazards.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Keep the worksite clean and organized. This can help to prevent tripping
-                                    hazards and other accidents.
-
+                                    <p style="color:black">
+                                        • Keep the worksite clean and organized. This can help to prevent tripping
+                                        hazards and other accidents.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Use proper tools and equipment. Ensure that all tools and equipment are in
-                                    good working condition and that they are being used correctly.
+                                    <p style="color:black">
+                                        • Use proper tools and equipment. Ensure that all tools and equipment are in
+                                        good working condition and that they are being used correctly.
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Be aware of your surroundings. Pay attention to potential hazards and take
-                                    steps to avoid them.
+                                    <p style="color:black">
+                                        • Be aware of your surroundings. Pay attention to potential hazards and take
+                                        steps to avoid them.
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Report all accidents immediately. This will help to ensure that they are
-                                    investigated and that corrective action is taken to prevent similar accidents
-                                    from occurring.
+                                    <p style="color:black">
+                                        • Report all accidents immediately. This will help to ensure that they are
+                                        investigated and that corrective action is taken to prevent similar accidents
+                                        from occurring.
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Provide first aid training. This will ensure that workers are able to provide
-                                    first aid in the event of an accident.
-
+                                    <p style="color:black">
+                                        • Provide first aid training. This will ensure that workers are able to provide
+                                        first aid in the event of an accident.
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Have an emergency response plan in place. This will help to ensure that
-                                    workers know what to do in the event of an emergency.
+                                    <p style="color:black">
+                                        • Have an emergency response plan in place. This will help to ensure that
+                                        workers know what to do in the event of an emergency.
 
-
+                                    </p>
                                 </tr><br>
                                 <tr>
-                                    • Learn from accidents. Investigate all accidents and take steps to prevent
-                                    similar accidents from occurring.
-
+                                    <p style="color:black">
+                                        • Learn from accidents. Investigate all accidents and take steps to prevent
+                                        similar accidents from occurring.
+                                    </p>
                                 </tr><br>
                             </tbody>
                         </table>

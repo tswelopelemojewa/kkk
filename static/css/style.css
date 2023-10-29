@@ -5,6 +5,16 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+body{
+    background-image: url("/static/image/img three.jpg"); ;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    color: white;
+    
+}
+
 .section {
     width: 100%;
     min-height: 100vh;
@@ -18,11 +28,11 @@
 }
 .content-section {
     float: left;
-    width: 55%;
+    width: 50%;
 }
 .image-section {
     float: right;
-    width: 40%;
+    width: 50%;
 }
 .image-section img {
     width: 100%;
