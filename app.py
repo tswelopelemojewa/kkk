@@ -89,7 +89,7 @@ def logout():
 # model predictions
 
 # Import the model as pickle file
-with open('Construction_model.pkl','rb') as capstone_model:
+with open('Construction.pkl','rb') as capstone_model:
         model = pickle.load(capstone_model)
 
 
